@@ -157,12 +157,11 @@ const Explorer = () => {
       <S.TVLChartContainer item mobile={12}>
         <S.TVLChartTitle>Total Value Locked Chart</S.TVLChartTitle>
         <iframe
-          width="100%"
+          width="99%"
           height="360px"
           src="https://defillama.com/chart/protocol/c3-exchange?tvl=true&denomination=USD&theme=dark"
           title="DefiLlama"
           frameBorder="0"
-          // style={{ overflow: 'hidden', border: 'none' }}
         ></iframe>
       </S.TVLChartContainer>
       <Grid item mobile={12}>
