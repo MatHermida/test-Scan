@@ -104,13 +104,24 @@ export const WrongAddressTableText = styled('div')(() => ({
   textAlign: 'center',
 }));
 
-export const TLVChartContainer = styled(Grid)(({ theme }) => ({
-  height: '370px',
-  minHeight: '370px',
-  maxHeight: '200px',
-  maxWidth: '1400px',
+export const TVLChartContainer = styled(Grid)(({ theme }) => ({
+  height: '408px',
+  minHeight: '408px',
+  maxHeight: '408px',
   overflow: 'hidden',
   background: theme.palette.background.default,
   borderRadius: theme.spacing(1),
   marginBottom: '16px',
+}));
+
+export const TVLChartTitle = styled(Grid)(({ theme }) => ({
+  fontFamily: 'Bricolage Grotesque',
+  height: '38px',
+  minHeight: '38px',
+  maxHeight: '38px',
+  borderBottom: `1px solid ${theme.palette.primary.dark}`,
+  display: 'flex',
+  alignItems: 'center',
+  paddingLeft: '32px',
+  fontSize: '14px',
 }));
