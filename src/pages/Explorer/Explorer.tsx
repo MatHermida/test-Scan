@@ -154,6 +154,15 @@ const Explorer = () => {
           )}
         </>
       )}
+      <S.TLVChartContainer item mobile={12}>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://defillama.com/chart/protocol/c3-exchange?tvl=true&bridgeVolume=false&twitter=false&devMetrics=false&devCommits=false&denomination=USD&groupBy=cumulative&theme=dark"
+          title="DefiLlama"
+          frameBorder="0"
+        ></iframe>
+      </S.TLVChartContainer>
       <Grid item mobile={12}>
         <Grid container columnSpacing={2}>
           <Grid item mobile={12} mediumDesktop={8}>
