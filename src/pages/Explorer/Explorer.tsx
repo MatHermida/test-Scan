@@ -157,8 +157,7 @@ const Explorer = () => {
       <S.TLVChartContainer item mobile={12}>
         <iframe
           width="100%"
-          height="100%"
-          // src="https://defillama.com/chart/protocol/c3-exchange?tvl=true&bridgeVolume=false&twitter=false&devMetrics=false&devCommits=false&denomination=USD&groupBy=cumulative&theme=dark"
+          height="200px"
           src="https://defillama.com/chart/protocol/c3-exchange?tvl=true&denomination=USD&theme=dark"
           title="DefiLlama"
           frameBorder="0"

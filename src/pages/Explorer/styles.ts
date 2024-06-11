@@ -107,7 +107,7 @@ export const WrongAddressTableText = styled('div')(() => ({
 export const TLVChartContainer = styled(Grid)(({ theme }) => ({
   height: '370px',
   minHeight: '370px',
-  maxHeight: '370px',
+  maxHeight: '200px',
   maxWidth: '1400px',
   overflow: 'hidden',
   background: theme.palette.background.default,
