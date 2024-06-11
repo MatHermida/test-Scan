@@ -158,7 +158,8 @@ const Explorer = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://defillama.com/chart/protocol/c3-exchange?tvl=true&bridgeVolume=false&twitter=false&devMetrics=false&devCommits=false&denomination=USD&groupBy=cumulative&theme=dark"
+          // src="https://defillama.com/chart/protocol/c3-exchange?tvl=true&bridgeVolume=false&twitter=false&devMetrics=false&devCommits=false&denomination=USD&groupBy=cumulative&theme=dark"
+          src="https://defillama.com/chart/protocol/c3-exchange?tvl=true&denomination=USD&theme=dark"
           title="DefiLlama"
           frameBorder="0"
         ></iframe>
