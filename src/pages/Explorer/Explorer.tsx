@@ -157,10 +157,11 @@ const Explorer = () => {
       <S.TLVChartContainer item mobile={12}>
         <iframe
           width="100%"
-          height="200px"
+          height="365px"
           src="https://defillama.com/chart/protocol/c3-exchange?tvl=true&denomination=USD&theme=dark"
           title="DefiLlama"
           frameBorder="0"
+          style={{ overflow: 'hidden', border: 'none' }}
         ></iframe>
       </S.TLVChartContainer>
       <Grid item mobile={12}>
