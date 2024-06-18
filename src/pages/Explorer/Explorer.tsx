@@ -160,7 +160,7 @@ const Explorer = () => {
           width="99%"
           height="360px"
           src="https://defillama.com/chart/protocol/c3-exchange?tvl=true&denomination=USD&theme=dark"
-          title="DefiLlama"
+          title="C3"
           frameBorder="0"
         ></iframe>
       </S.TVLChartContainer>
