@@ -136,7 +136,11 @@ export const TVLChartTitle = styled(Grid, {
 
 export const TVLChart = styled('div', {
   shouldForwardProp: createShouldForwardProp(['_isMobile']),
-})<ITVLChart>(({ _isMobile }) => ({
+})<ITVLChart>(({ theme, _isMobile }) => ({
   paddingLeft: _isMobile ? '0px' : '13px',
   width: _isMobile ? '100%' : 'calc(100% - 32px)',
+  ...(_isMobile && {
+    background: theme.palette.background.default,
+    borderRadius: theme.spacing(1),
+  }),
 }));
