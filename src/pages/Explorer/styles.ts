@@ -1,7 +1,6 @@
 import Grid from '@mui/material/Grid';
 import styled from '@mui/material/styles/styled';
 import gridBackground from '../../assets/images/grid-background.png';
-import { createShouldForwardProp } from '../../utils';
 
 export const Container = styled(Grid)(() => ({
   maxWidth: '1400px',
@@ -103,44 +102,4 @@ export const WrongAddressTableText = styled('div')(() => ({
   marginTop: '16px',
   padding: '0 15%',
   textAlign: 'center',
-}));
-
-interface ITVLChart {
-  _isMobile: boolean;
-}
-export const TVLChartContainer = styled(Grid, {
-  shouldForwardProp: createShouldForwardProp(['_isMobile']),
-})<ITVLChart>(({ theme, _isMobile }) => ({
-  height: '408px',
-  minHeight: '408px',
-  maxHeight: '408px',
-  overflow: 'hidden',
-  ...(!_isMobile && { background: theme.palette.background.default }),
-  borderRadius: theme.spacing(1),
-  marginBottom: '16px',
-}));
-
-export const TVLChartTitle = styled(Grid, {
-  shouldForwardProp: createShouldForwardProp(['_isMobile']),
-})<ITVLChart>(({ theme, _isMobile }) => ({
-  fontFamily: 'Bricolage Grotesque',
-  height: '38px',
-  minHeight: '38px',
-  maxHeight: '38px',
-  ...(!_isMobile && { borderBottom: `1px solid ${theme.palette.primary.dark}` }),
-  display: 'flex',
-  alignItems: 'center',
-  paddingLeft: _isMobile ? '10px' : '32px',
-  fontSize: '14px',
-}));
-
-export const TVLChart = styled('div', {
-  shouldForwardProp: createShouldForwardProp(['_isMobile']),
-})<ITVLChart>(({ theme, _isMobile }) => ({
-  paddingLeft: _isMobile ? '0px' : '13px',
-  width: _isMobile ? '100%' : 'calc(100% - 32px)',
-  ...(_isMobile && {
-    background: theme.palette.background.default,
-    borderRadius: theme.spacing(1),
-  }),
 }));
