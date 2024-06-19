@@ -2,7 +2,7 @@ import * as S from './styles';
 
 const DesktopTVLChart = () => {
   return (
-    <S.TVLChartContainer item>
+    <S.TVLChartContainer item mobile={12}>
       <S.TVLChartTitle item>Total Value Locked Chart</S.TVLChartTitle>
       <S.TVLChart>
         <iframe
