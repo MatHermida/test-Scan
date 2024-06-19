@@ -154,9 +154,11 @@ const Explorer = () => {
           )}
         </>
       )}
-      <S.TVLChartContainer item mobile={12}>
-        <S.TVLChartTitle item>Total Value Locked Chart</S.TVLChartTitle>
-        <S.TVLChart>
+      <S.TVLChartContainer item mobile={12} _isMobile={isMobile}>
+        <S.TVLChartTitle item _isMobile={isMobile}>
+          Total Value Locked Chart
+        </S.TVLChartTitle>
+        <S.TVLChart _isMobile={isMobile}>
           <iframe
             width="100%"
             height="360px"
