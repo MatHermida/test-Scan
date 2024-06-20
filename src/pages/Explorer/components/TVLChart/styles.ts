@@ -31,6 +31,7 @@ export const TVLChartTitleMobile = styled(BaseTVLChartTitle)(() => ({
 export const TVLChartMobile = styled(BaseTVLChart)(({ theme }) => ({
   paddingLeft: '0px',
   width: '100%',
+  height: '370px',
   background: theme.palette.background.default,
   borderRadius: theme.spacing(1),
 }));
