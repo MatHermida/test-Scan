@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid';
 import styled from '@mui/material/styles/styled';
 
-export const TVLChartContainer = styled(Grid)(({ theme }) => ({ //BaseTVLChartContainer
+export const TVLChartContainer = styled(Grid)(({ theme }) => ({
   height: '408px',
   minHeight: '408px',
   maxHeight: '408px',
@@ -9,9 +9,12 @@ export const TVLChartContainer = styled(Grid)(({ theme }) => ({ //BaseTVLChartCo
   borderRadius: theme.spacing(1),
   marginBottom: '16px',
   background: theme.palette.background.default,
+  [theme.breakpoints.down('desktop')]: {
+    marginTop: '16px',
+  },
 }));
 
-export const TVLChartTitle = styled(Grid)(({ theme }) => ({ //BaseTVLChartTitle
+export const TVLChartTitle = styled(Grid)(() => ({
   fontFamily: 'Bricolage Grotesque',
   height: '38px',
   minHeight: '38px',
@@ -24,7 +27,7 @@ export const TVLChartTitle = styled(Grid)(({ theme }) => ({ //BaseTVLChartTitle
   paddingRight: '32px',
 }));
 
-export const TVLChart = styled('div')(() => ({ //BaseTVLChart
+export const TVLChart = styled('div')(() => ({
   paddingLeft: '13px',
   width: 'calc(100% - 25px)',
 }));
