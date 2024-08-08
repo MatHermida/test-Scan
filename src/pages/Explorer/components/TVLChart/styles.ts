@@ -26,7 +26,7 @@ export const TVLChartTitle = styled(Grid)(({ theme }) => ({ //BaseTVLChartTitle
 
 export const TVLChart = styled('div')(() => ({ //BaseTVLChart
   paddingLeft: '13px',
-  width: 'calc(100% - 32px)',
+  width: 'calc(100% - 25px)',
 }));
 
 export const DefiLlamaURL = styled('a')(({ theme }) => ({
