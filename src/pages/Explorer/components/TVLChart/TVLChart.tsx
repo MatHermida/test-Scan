@@ -17,7 +17,7 @@ const TVLChart = () => {
         <iframe
           width="100%"
           height="360px"
-          src="https://defillama.com/chart/protocol/c3-exchange?tvl=true&denomination=USD&theme=dark"
+          src="https://defillama.com/chart/protocol/c3-exchange?tvl=true&volume=false&bridgeVolume=false&twitter=false&devMetrics=false&devCommits=false&groupBy=daily&theme=dark"
           title="C3"
           frameBorder="0"
         ></iframe>
