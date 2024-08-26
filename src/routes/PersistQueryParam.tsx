@@ -3,7 +3,6 @@ import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-
 import Explorer from '../pages/Explorer/Explorer';
 import Decoder from '../pages/Decoder/Decoder';
 import { AppRoutes } from './routes';
-import TVLChart2 from '../pages/Explorer/components/TVLChart/DOCTYPEhtml';
 
 const PersistQueryParam = ({ shouldPersist }: any) => {
   const location = useLocation();
@@ -21,7 +20,6 @@ const PersistQueryParam = ({ shouldPersist }: any) => {
     <Routes>
       <Route path={AppRoutes.EXPLORER} element={<Explorer />} />
       <Route path={AppRoutes.DECODER} element={<Decoder />} />
-      <Route path="/xd" element={<TVLChart2 />} />
       <Route path="/*" element={<Navigate to={AppRoutes.EXPLORER} replace />} />
     </Routes>
   );
